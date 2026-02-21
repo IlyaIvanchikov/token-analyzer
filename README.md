@@ -5,13 +5,15 @@ A CLI tool that breaks down text into tokens using Anthropic's tokenizer, visual
 ## Install
 
 ```bash
-npm install
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Usage
 
 ```bash
-node index.js <your text here>
+python main.py <your text here>
 ```
 
 If no text is provided, defaults to `"I am Ilya Ivanchikov"`.
@@ -19,7 +21,7 @@ If no text is provided, defaults to `"I am Ilya Ivanchikov"`.
 ## Example
 
 ```bash
-node index.js Hello, my name is Ilya
+python main.py Hello, my name is Ilya
 ```
 
 ```
@@ -74,6 +76,6 @@ node index.js Hello, my name is Ilya
 
 ## Notes
 
-- Uses [`@anthropic-ai/tokenizer`](https://www.npmjs.com/package/@anthropic-ai/tokenizer) (vocabulary size: 65,000 tokens)
+- Uses [`tiktoken`](https://github.com/openai/tiktoken) with Claude's BPE ranks (vocabulary size: 65,000 tokens)
 - This tokenizer is approximate for Claude 3+ models — exact counts come from the `usage` field in API responses
 - Pricing reflects Claude 4.5 series models
