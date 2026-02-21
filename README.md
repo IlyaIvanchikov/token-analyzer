@@ -5,15 +5,13 @@ A CLI tool that breaks down text into tokens using Anthropic's tokenizer, visual
 ## Install
 
 ```bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+uv sync
 ```
 
 ## Usage
 
 ```bash
-python main.py <your text here>
+uv run python main.py <your text here>
 ```
 
 If no text is provided, defaults to `"I am Ilya Ivanchikov"`.
@@ -21,7 +19,7 @@ If no text is provided, defaults to `"I am Ilya Ivanchikov"`.
 ## Example
 
 ```bash
-python main.py Hello, my name is Ilya
+uv run python main.py Hello, my name is Ilya
 ```
 
 ```
@@ -73,6 +71,10 @@ python main.py Hello, my name is Ilya
   Claude Opus 4.5
     $1 buys: 33,333 inputs  |  6,666 outputs
 ```
+
+## See Also
+
+- [Fibonacci Token Count Comparison](https://gist.github.com/IlyaIvanchikov/30ea1de0f98394fbbc296d4601947357) — comparing token counts for a Fibonacci function across Python, JavaScript, Go, and Haskell (tokenized with [OpenAI Tokenizer](https://platform.openai.com/tokenizer))
 
 ## Notes
 

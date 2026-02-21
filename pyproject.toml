@@ -1,0 +1,8 @@
+[project]
+name = "token-analyzer"
+version = "0.1.0"
+description = "CLI tool that breaks down text into tokens using Anthropic's tokenizer, visualizes token boundaries, and calculates costs across Claude models"
+requires-python = ">=3.12"
+dependencies = [
+    "tiktoken",
+]
