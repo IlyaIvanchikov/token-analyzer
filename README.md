@@ -57,8 +57,8 @@ uv run python main.py Hello, my name is Ilya
   Model                 As Input        As Output
   ──────────────────────────────────────────────────────
   Claude Haiku 4.5      $0.0000060000   $0.0000300000
-  Claude Sonnet 4.5     $0.0000180000   $0.0000900000
-  Claude Opus 4.5       $0.0000300000   $0.0001500000
+  Claude Sonnet 4.6     $0.0000180000   $0.0000900000
+  Claude Opus 4.6       $0.0000300000   $0.0001500000
 
 ────────────────────────────────────────────────────────────
   Scale Perspective
@@ -66,9 +66,9 @@ uv run python main.py Hello, my name is Ilya
 
   Claude Haiku 4.5
     $1 buys: 166,666 inputs  |  33,333 outputs
-  Claude Sonnet 4.5
+  Claude Sonnet 4.6
     $1 buys: 55,555 inputs  |  11,111 outputs
-  Claude Opus 4.5
+  Claude Opus 4.6
     $1 buys: 33,333 inputs  |  6,666 outputs
 ```
 
@@ -80,4 +80,4 @@ uv run python main.py Hello, my name is Ilya
 
 - Uses [`tiktoken`](https://github.com/openai/tiktoken) with Claude's BPE ranks (vocabulary size: 65,000 tokens)
 - This tokenizer is approximate for Claude 3+ models — exact counts come from the `usage` field in API responses
-- Pricing reflects Claude 4.5 series models
+- Pricing reflects Claude 4.5/4.6 series models

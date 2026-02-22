@@ -8,8 +8,8 @@ import tiktoken
 # Anthropic pricing per 1M tokens (USD)
 MODELS = [
     {"name": "Claude Haiku 4.5",  "input": 1.0,  "output": 5.0},
-    {"name": "Claude Sonnet 4.5", "input": 3.0,  "output": 15.0},
-    {"name": "Claude Opus 4.5",   "input": 5.0,  "output": 25.0},
+    {"name": "Claude Sonnet 4.6", "input": 3.0,  "output": 15.0},
+    {"name": "Claude Opus 4.6",   "input": 5.0,  "output": 25.0},
 ]
 
 # ANSI colors
